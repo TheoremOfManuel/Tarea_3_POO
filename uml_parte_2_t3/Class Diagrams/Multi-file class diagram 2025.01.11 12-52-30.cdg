@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="Rectangulo" package="Entidad" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="base" type="int" visibility="package"/>
+        <Field name="altura" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="base"/>
+          <Argument type="int" name="altura"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="calcularPerimetro" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Circulo" package="Entidad" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="radio" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="radio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="calcularPerimetro" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cuadrado" package="Entidad" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="lado" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="lado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="calcularPerimetro" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Rombo" package="Entidad" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="diagonalMayor" type="int" visibility="package"/>
+        <Field name="diagonalMenor" type="int" visibility="package"/>
+        <Field name="lado" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="diagonalMayor"/>
+          <Argument type="int" name="diagonalMenor"/>
+          <Argument type="int" name="lado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="calcularPerimetro" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Trapecio" package="Entidad" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="a" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+          <Argument type="int" name="c"/>
+          <Argument type="int" name="d"/>
+          <Argument type="int" name="h"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="calcularPerimetro" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TrianguloRectangulo" package="Entidad" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="base" type="int" visibility="package"/>
+        <Field name="altura" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="base"/>
+          <Argument type="int" name="altura"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="calcularPerimetro" returnType="double" visibility="public"/>
+        <Method name="calcularHipotenusa" returnType="double" visibility="public"/>
+        <Method name="determinarTipoTriangulo" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="mdiPrincipal" package="Principal" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="circulo" type="jpCirculo" visibility="private"/>
+        <Field name="cuadrado" type="jpCuadrado" visibility="private"/>
+        <Field name="rectangulo" type="jpRectangulo" visibility="private"/>
+        <Field name="triangulo" type="jpTrianguloRectangulo" visibility="private"/>
+        <Field name="rombo" type="jpRombo" visibility="private"/>
+        <Field name="trapecio" type="jpTrapecio" visibility="private"/>
+        <Field name="desktopPane" type="javax.swing.JDesktopPane" visibility="private"/>
+        <Field name="fileMenu" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jifCirculo" type="javax.swing.JInternalFrame" visibility="private"/>
+        <Field name="jifCuadrado" type="javax.swing.JInternalFrame" visibility="private"/>
+        <Field name="jifRectangulo" type="javax.swing.JInternalFrame" visibility="private"/>
+        <Field name="jifRombo" type="javax.swing.JInternalFrame" visibility="private"/>
+        <Field name="jifTrapecio" type="javax.swing.JInternalFrame" visibility="private"/>
+        <Field name="jifTrianguloRectangulo" type="javax.swing.JInternalFrame" visibility="private"/>
+        <Field name="jmiCirculo" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jmiCuadrado" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jmiRectangulo" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jmiRombo" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jmiSalir" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jmiTrapecio" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jmiTrianguloRectangulo" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menuBar" type="javax.swing.JMenuBar" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="iniciarFormularios" returnType="void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jmiSalirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jmiCuadradoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jmiCirculoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jmiRectanguloActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jmiTrianguloRectanguloActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jmiRomboActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jmiTrapecioActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
